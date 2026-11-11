@@ -1,0 +1,15 @@
+{
+  "data/processed/hwdb11_test_32.npz": "3ce0c4d03f944e5f1b82a7dbd909423d5891236c0f093499104543f96beda81e",
+  "data/processed/hwdb11_train1_100_32.npz": "56a1bc43285edc1d94a873b83f4aeba09c8cebe3726c56605e860313eedd7080",
+  "data/processed/hwdb11_train2_100_32.npz": "b03bf0929574f1dad380e4d09b372064adc9a90d8f0cfc88d3990f0b81a0a373",
+  "data/raw/cifar10/cifar-10-batches-py/data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+  "data/raw/cifar10/cifar-10-batches-py/data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+  "data/raw/cifar10/cifar-10-batches-py/data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+  "data/raw/cifar10/cifar-10-batches-py/data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+  "data/raw/cifar10/cifar-10-batches-py/data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154",
+  "data/raw/cifar10/cifar-10-batches-py/test_batch": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "data/raw/cifar100/cifar-100-python/train": "735e79b04f092ca3d2e6d07f368c0a7d70d48c48d28865950cc24454cf45129b",
+  "data/raw/cifar10n/CIFAR-10_human.pt": "873e69c39cb9b5e97fb6bae2d60bb59b38a5cbc31d2b868f7903dcb2b9dd2310",
+  "data/raw/cifar100n/CIFAR-100_human.pt": "bd2d80409754d420292d622e15e25248ba21e37d27429efac49c8da723f44394",
+  "results/curated_bench/model.pt": "a9705e41da3c5f557eaeb1f033326baa1ff1387d8ff63609b06af6169224f58b"
+}

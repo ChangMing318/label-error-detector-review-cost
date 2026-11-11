@@ -1,0 +1,17 @@
+{
+  "version": "DynaSent v1.1",
+  "revision": "707b6208978bfe7ff251a0c3263c9f0552c27b48",
+  "sha256": "33001cf394618aa38f9530c43ca87072b92f5ee609a02afa2d168d25560cedfd",
+  "fit_seed": 260204,
+  "aux_seed": 260205,
+  "fit_max": 22335,
+  "reference_max": 5561,
+  "epochs": 8,
+  "batch": 256,
+  "knn_neighbors": 10,
+  "source_rate": 0.20,
+  "selection": "Use up to 1500 R1 source examples per seed, sharing the highest wrong class from an independent lexical MLP across random and difficulty-ranked masks. Choose by source hits at the corresponding cap.",
+  "human": "An ID-hashed worker vote is the observed claim. Include a ternary claim when at least three of the other four workers agree on a ternary reference. Target R1 test and R2 train plus test, with duplicate normalized text removed and review groups isolated across roles.",
+  "profile": "R1 dev groups are split by a fixed group hash into source and human development profiles. Evaluate R1 and R2 targets at every operating point from operating_envelope.json. R2 dev is unused.",
+  "candidates": ["MLP margin","SVD margin","RP margin","MLP 10NN","MLP NLL"]
+}

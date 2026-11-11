@@ -1,0 +1,14 @@
+{
+  "question": "On untouched public human annotations, do item-level votes improve verified yield over using the same votes to choose a fixed detector queue?",
+  "primary": ["polite/stack_transfer", "sbic/official_or_pooled", "mbic/full"],
+  "secondary": ["polite/stack_internal"],
+  "eligibility": "Require at least five valid distinct workers per item and 300 items in each role. Use deterministic existing vote ordering, caps, and grouped splits. Keep every completed target. Other candidates screened for download/labels only are not tested.",
+  "data": {
+    "polite": "Original Stanford Politeness v1.01 score and TurkID columns; encode raw score above midpoint 13 as positive. Main target is the Stack Exchange requests, fit/history are disjoint Wikipedia requests. Secondary Stack Exchange internal grouped split. Remove exact normalized duplicates within each pool and any Stack Exchange text from Wikipedia source.",
+    "sbic": "Original SBIC v2 individual worker votes on offensiveness. Definite offensive (1) versus no or unsure (0, 0.5). Use released train/dev/test roles after group deduplication; if any eligible role has fewer than 300 records, use a pooled deterministic group split, determined from eligible row counts only.",
+    "mbic": "Original MBIC per-annotator sentence bias labels. Use the published discrete biased versus non-biased verdicts, omitting any missing and explicit cannot-decide values. Split by article identifier or URL to keep sentences from the same article together. Remove exact normalized duplicate sentences before splitting."
+  },
+  "arms": "Reuse frozen located_votes model, fixed source detectors, direct existing-witness detector selection, vote-only count and calibrated ranking, scorer-only calibrated ranking, simple vote-count priority with score ties, and full item-linked fusion. One recorded current vote, two already collected witness votes, two separate held-out human references. No target label purchases, a 10% item-check cap, with every arm checking the same number of distinct items.",
+  "gate": "Test full and count_then_score separately against the intersection of direct vote-based detector selection and scorer-only. Both primary-reference gains must be at least 25 per 10000, Holm-adjusted joint one-sided p below .05 across the two arms and all eligible primary datasets, and the second reference must agree in sign against both controls. Full-vs-simple is secondary and determines whether the simple usage already suffices. Report every completed condition.",
+  "pivot": "If the gate fails, test a different benchmark question on VariErr, focusing on the operational cost of treating every consensus disagreement as a verified correction. Use released fixed predictions and independent adjudications rather than adding another vote-fusion variant."
+}

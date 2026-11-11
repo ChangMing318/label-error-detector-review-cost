@@ -1,0 +1,18 @@
+{
+  "question": "Can class-conditional ranking profiles from disjoint development records predict fixed-budget review yield on untouched human target claims?",
+  "unit": "disagreements found per 10000 target records",
+  "budgets": [0.05, 0.10, 0.20],
+  "cifar_prevalence": [0.02,0.04,0.06,0.08,0.10,0.12],
+  "cifar_primary": "Within-cohort honest profile-to-holdout prediction; compare 4% and 8% on CIFAR-10N. Cross-cohort profiles are external stress tests. Use global image-hash assignment, not a split of repeated label episodes.",
+  "dynasent_prevalence": [0.04,0.08,0.12,0.16],
+  "dynasent_primary": "Round 1 development profile to disjoint Round 1 and Round 2 human targets. Evaluate the preselected lexical MLP margin and MLP 10NN comparison and the full fixed menu. Report all rates and caps, including cells with no winner change.",
+  "source_seeds": [260109,260110,260111,260112,260113,260114,260115,260116,260117,260118],
+  "target_repeats": 100,
+  "bootstrap_seed": 260203,
+  "bootstrap_draws": 20000,
+  "role_seed": 260201,
+  "matched_target_size": "Use up to 2000 text records per target and up to 4000 image records per target, capped by the support of every included operating point; round down to a multiple of 100. Gold labels in held-out targets only construct evaluation subsets and score fixed orders.",
+  "forecast": "Use the development class-conditional true- and false-positive curves, with frozen label-independent tie order, interpolate mixture mass at each specified budget and prevalence, and choose the detector with higher forecast. Evaluation on original prevalences is diagnostic because true deployment prevalence is unknown.",
+  "baselines": "Highest development AUC, highest development yield at original prevalence, and the frozen source-specific winners where available",
+  "success": "Report held-out regret and forecast error without tuning or dropping targets. A claimed cross-collection improvement requires a positive paired interval against the strongest predeclared fixed baseline; report directional agreement separately from utility."
+}

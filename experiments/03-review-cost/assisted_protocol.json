@@ -1,0 +1,9 @@
+{
+  "endpoint": "The difficulty queue needs at least ceil(0.10 B) additional checks to match the random queue at B.",
+  "audit_fraction": 0.10,
+  "draws": 600,
+  "seed": 26112644,
+  "methods": ["raw", "rank_forecast", "residual", "residual_shrink"],
+  "history": "Fit a corpus-weighted ridge regression of published human-reference disagreements on target-side rank summaries, excluding the entire evaluation corpus. Calibrate one-sided screening cutoffs on nonmaterial replays from other corpora using nested leave-two-corpora-out predictions. Historical reference labels are setup supervision. The target uses only ranks and audited outcomes.",
+  "comparison": "Use identical proportional audits for raw and residual estimators. Report balanced-over-corpora false alerts and overall detection separately on each reference. The historical cutoff is an empirical screen and does not carry a worst-case 5% certificate."
+}

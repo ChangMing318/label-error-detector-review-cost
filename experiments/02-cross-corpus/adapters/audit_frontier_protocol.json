@@ -1,0 +1,10 @@
+{
+  "estimand": "Extra verified corrections from switching to one challenger after the same paid audit, at the same total cap.",
+  "challenger": "Second-highest historical hit count at the 10% cap. Choose only from historical outcomes, ties by frozen candidate order.",
+  "design": "Use the two prefixes of length B-m. Draw m uniform records from each exclusive portion, with m=min(50, floor(B/2), exclusive size). Each policy reviews its shortened prefix plus the other queue's already-audited sample. Both spend exactly B checks.",
+  "estimate": "With equal exclusive size d and audit hits h0,h1, estimate residual improvement by (d-m)*(h1-h0)/m. Invert the exact finite-population hypergeometric sampling distribution for the two exclusive totals. Subtract the known difference in audit hits to obtain a confidence interval for residual improvement.",
+  "gate": "Switch only when the lower bound of the conservative two-sided 95% interval is positive. The experiment evaluates this decision after the probe. The initial probe is charged to the same human cap.",
+  "evaluation": "Compare the forecast with the paired realized residual improvement and check interval coverage. Also compare realized full policy with the historical full prefix, counting the probe. Use 100 frozen paired runs per target. Keep zero threshold and coverage fixed.",
+  "seed_namespace": 26112000,
+  "replicates": 100
+}

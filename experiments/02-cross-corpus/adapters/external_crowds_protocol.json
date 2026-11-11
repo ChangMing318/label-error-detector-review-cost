@@ -1,0 +1,22 @@
+{
+  "question": "Does paid queue selection ever beat direct queue selection given the same already-collected human votes on additional public datasets?",
+  "inclusion": "Include named public datasets with input features, identifiable individual human votes, and independent reference labels or separable reference votes. Check input availability, classes, overlap, and sample counts before running. Report every executed target.",
+  "targets": {
+    "GoEmotions": "Binary any emotion versus neutral. Keep comments with at least five valid distinct raters. Split by Reddit link ID before selecting votes. Rater order is a fixed hash of item and rater. Evaluate both reserved validators separately.",
+    "Wikipedia Personal Attacks": "Use official train/dev/test roles and deduplicate normalized text across roles. Require nine distinct valid worker votes. Use two independent three-vote majorities as primary and sensitivity references. In addition to the full target, compare the released random development subset to the blocked-user test subset where the released sample field permits.",
+    "Fashion-MNIST-H": "Use the released raw votes and original Fashion-MNIST test images and labels. Group exact duplicate pixels by SHA-256 before the fixed split. Require at least three distinct votes per image. Use the same numeric menu as Music Genres, with flattened pixels.",
+    "Music Genres": "Use the original acoustic feature matrix, reference genre and crowd votes. Apply fixed splits if the original partitions lack enough eligible rows in the history and target roles. Require three distinct available crowd judgments.",
+    "Sentiment Polarity": "Use the original review features or text, original reference labels, and crowd votes if publicly obtainable. Require three distinct judgments."
+  },
+  "annotation_shift": "History uses the majority of the first three real votes. Target uses the first real vote as the current claim and the next two as optional existing witnesses. Source and target role assignments are independent of annotation values. Source majority ties in multiclass tasks resolve to the earliest tied vote. Keep a source-single-vote contrast as secondary.",
+  "split": "Use metadata groups for GoEmotions and normalized text for Wikipedia. Otherwise pre-fixed item split if no grouped IDs are published. Distinct fit, history, and target roles. Sample up to 10000/8000/12000 fit/history/target rows by a stable hash before using reference labels. Require at least 60 rows per role and at least 12 target checks.",
+  "candidates": "Word TF-IDF logistic head, character TF-IDF logistic head, and word SVD cosine prototype margin and 10NN on text. Standardized logistic head, cosine prototype margin, and 10NN on published acoustic features. Fit only on reference labels in the isolated fit split.",
+  "comparison": "Historical full-cap queue; directly select a full-cap queue using the same two existing votes; sort by witness disagreement alone; uniform paid audit and historical curve selection; previously frozen paired exclusive audit as a secondary comparator. Report one-claim regime separately, hiding the extra votes from both policies.",
+  "budget": "10% target review cap. Reserve 10% of that cap for audit, rounded to the nearest even count, at least two checks and at most 100. Audit corrections are counted and checks do not overlap. Use the same cap for every policy.",
+  "positive": "For the full-information regime, claim a robust positive only if audit improves over both the direct candidate selection and witness ranking, with Holm-adjusted paired evidence and a point gain of at least 25 fixes per 10000. Report the unadjusted intervals and all outcomes even if none pass. Single-claim positives use the historical no-audit queue as the comparator.",
+  "role_seed": 26113001,
+  "audit_seed": 26113100,
+  "bootstrap_seed": 26113200,
+  "replicates": 100,
+  "bootstrap_draws": 20000
+}

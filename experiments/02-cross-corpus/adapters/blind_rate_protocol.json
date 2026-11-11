@@ -1,0 +1,23 @@
+{
+  "question": "Does matching the target disagreement rate improve detector selection beyond choosing by source yield at the same review cap?",
+  "primary": ["go/full", "wiki/full", "fashion/full", "d3/full", "mhs/full"],
+  "secondary": ["wiki/random_to_blocked", "d3/random_to_selected", "d3/every_eligible_region", "mhs/every_eligible_platform"],
+  "minimum_fit_history_target": 300,
+  "split_and_detectors": "Use existing external_crowds readers, deterministic group splits, size limits and detectors. For D3code and MHS split by normalized exact text hash; require five valid distinct raters. D3code region comparisons use within-region target votes and pooled fit/history. MHS platform comparisons use the same fitting and history rows as the full corpus except rows from the target platform. Keep every eligible secondary. Fit and history pools do not overlap targets.",
+  "annotation_protocol": "Source claim is the majority of three genuine votes. Target current claim is one genuine vote with two separate existing witnesses. GoEmotions, D3code and MHS use two separate held-out judges; Wikipedia uses two independent three-vote majorities; Fashion-MNIST uses its original class. Primary reference index 0; index 1 is sensitivity only. MHS binary label is affirmative (ordinal value 2) versus no or unsure. D3code uses its published binary label. Duplicate normalized text stays in one role.",
+  "arms": {
+    "auc": "Select by source ROC-AUC with midrank score ties.",
+    "budget": "Select by source verified yield at the target review fraction, using the original source disagreement rate.",
+    "matched": "Estimate target prevalence by transporting the source single-vote error rate in each of three witness-count strata. Fit this map to history only, with Beta(0.5,0.5) smoothing and a pooled fallback for empty strata. Reweight source class-conditional ranking profiles to the estimated prevalence and maximize expected yield at the target review cap.",
+    "votes": "Directly select the candidate whose full review prefix has the largest number of opposing witness votes.",
+    "diagnostic": "After freezing decisions, select a source profile using the actual target disagreement rate. This policy is retrospective and excluded from the primary comparisons.",
+    "paid_sensitivity": "When witnesses are unavailable, reserve the nearest even number to one tenth of B, at least 2 and at most 100; sample without replacement, inspect once, estimate disagreement from the sampled references and adapt only the remaining review fraction. Credit audit corrections. Use 100 pre-fixed seeds. Compare against source-budget selection with no audit."
+  },
+  "cost": "B=round(0.10*N) complete item verifications for each operational arm. Existing witness and historical annotations are sunk, not newly acquired. Audit inspections come out of B. Use target reference labels only after writing frozen plans; the paid arm is evaluated by sequential access to sampled labels before judging the final queue.",
+  "positive_gate": "Primary contrast matched minus source budget. Require a gain of at least 25 fixes per 10,000, paired one-sided Holm-adjusted p<.05 across available primary datasets, and report votes as a separate comparator. One primary target per corpus. Keep all results and sensitivity references. Independent group-cluster bootstrap, conditional on the fixed source and queues.",
+  "cap": 0.1,
+  "audit_draws": 100,
+  "audit_seed": 26114100,
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 26114200
+}

@@ -1,0 +1,10 @@
+{
+  "question": "Under identical information and verification budgets, what is the value of retaining where the existing votes disagree rather than using them only to match a global rate or pick a fixed detector?",
+  "targets": "All completed blind_rate primary and secondary cohorts, unchanged splits, labels, scorer menu, budget and frozen blind choices. No new fitting data or target review labels.",
+  "models": "For historical and target rows use one recorded current claim. Calibrate with source labels only. Use source-fitted L2 logistic regression (C=1) with declared class indicators, scorer score midrank percentiles, and one-hot witness patterns (0,1,2 opposing; for 2, whether the opposing votes match each other). The four rankings are claim-only, scorer-only, witness-only and full. Include count-only and count followed by scorer-only score within ties as transparent baselines. Fit no model or threshold on target references.",
+  "controls": "Repeat the frozen full policy for 100 permutations of target witness pattern among records with the same current class, leaving the global rate estimate, all observed claim classes, candidate scores, and per-class witness histograms fixed. This is a mechanism check, not a collection strategy. Use one-sided randomization p=(1+#permuted queues matching or beating actual hits)/101.",
+  "primary": "Full versus the conjunction of the frozen matched-rate selector, direct witness-based detector selector, and scorer-only calibrated ranking. Each policy checks exactly B=round(.1*N) unique items. Require at least 25 more fixes per 10000 than every comparator and a paired one-sided Holm-adjusted p<.05. Report the witness-only and count-then-scorer controls separately, including wins against full.",
+  "inference": "Reuse the blind-rate paired group-cluster bootstrap and primary reference. Report all secondary cohorts and independent sensitivity references. Corpus is the unit of replication; D3code regional comparisons share items.",
+  "permutation_seed": 26115000,
+  "permutations": 100
+}

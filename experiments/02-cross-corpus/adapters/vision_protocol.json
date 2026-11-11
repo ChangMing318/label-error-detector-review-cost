@@ -1,0 +1,19 @@
+{
+  "backbone": "torchvision ImageNet ResNet18 cached resnet18-f37072fd.pth",
+  "resolution": 128,
+  "normalization": "ImageNet mean and standard deviation",
+  "head": "multinomial logistic regression C=1, LBFGS, max_iter=500 on unit-normalized frozen embeddings and original 25000 clean fit records",
+  "reference": "original disjoint 5000 clean reference records",
+  "knn": 10,
+  "seeds": [260109,260110,260111,260112,260113,260114,260115,260116,260117,260118],
+  "source_rates": {"c10":0.2,"c100":0.4},
+  "sources": ["Chen-ID-mask","Chen-ID-hard","NC-CNN","NC-Aux","AQuA-CM-Aux","AQuA-ID-Aux","Uniform"],
+  "human_targets": {"c10":["aggre_label","random_label1","random_label2","random_label3","worse_label"],"c100":["noisy_label"]},
+  "review_fraction": 0.10,
+  "candidate_order": ["CNN","PCA","RP","CNN-kNN","CNN-head","RN18-head","RN18-margin","RN18-kNN"],
+  "candidate_sizes": [5,6,8],
+  "primary": "CIFAR-10 random vs hard on the three individual annotation variants and CIFAR-10H; CIFAR-100N independent nearest-class vs fixed CNN",
+  "bootstrap_seed": 20261111,
+  "bootstrap_draws": 20000,
+  "public_downloads": false
+}
