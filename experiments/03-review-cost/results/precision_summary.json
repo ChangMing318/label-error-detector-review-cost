@@ -1,0 +1,472 @@
+{
+  "exact_statistics": [
+    {
+      "reference": 1,
+      "statistic": "count",
+      "allocation": "proportional",
+      "panels": 28,
+      "mean_power": 0.5417249626212982,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04910891578604399
+    },
+    {
+      "reference": 1,
+      "statistic": "pooled",
+      "allocation": "proportional",
+      "panels": 28,
+      "mean_power": 0.5419907783872359,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04970636776830302
+    },
+    {
+      "reference": 1,
+      "statistic": "posterior",
+      "allocation": "proportional",
+      "panels": 28,
+      "mean_power": 0.5419470759076528,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04970636776830302
+    },
+    {
+      "reference": 1,
+      "statistic": "likelihood",
+      "allocation": "proportional",
+      "panels": 28,
+      "mean_power": 0.5400828070367597,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04999956787300039
+    },
+    {
+      "reference": 1,
+      "statistic": "count",
+      "allocation": "balanced",
+      "panels": 28,
+      "mean_power": 0.5451562073218374,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04963867865295916
+    },
+    {
+      "reference": 1,
+      "statistic": "pooled",
+      "allocation": "balanced",
+      "panels": 28,
+      "mean_power": 0.545024539055283,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04937954814272871
+    },
+    {
+      "reference": 1,
+      "statistic": "posterior",
+      "allocation": "balanced",
+      "panels": 28,
+      "mean_power": 0.5440965232121213,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04979610137195396
+    },
+    {
+      "reference": 1,
+      "statistic": "likelihood",
+      "allocation": "balanced",
+      "panels": 28,
+      "mean_power": 0.5305819746385485,
+      "high_power": 10,
+      "worst_case_false_positive": 0.04979586297446785
+    },
+    {
+      "reference": 1,
+      "statistic": "count",
+      "allocation": "random60",
+      "panels": 28,
+      "mean_power": 0.5384862871601915,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04945153268908416
+    },
+    {
+      "reference": 1,
+      "statistic": "pooled",
+      "allocation": "random60",
+      "panels": 28,
+      "mean_power": 0.5398740865647702,
+      "high_power": 12,
+      "worst_case_false_positive": 0.0499850193231452
+    },
+    {
+      "reference": 1,
+      "statistic": "posterior",
+      "allocation": "random60",
+      "panels": 28,
+      "mean_power": 0.5253258299919861,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04957965809427671
+    },
+    {
+      "reference": 1,
+      "statistic": "likelihood",
+      "allocation": "random60",
+      "panels": 28,
+      "mean_power": 0.48277048478786905,
+      "high_power": 0,
+      "worst_case_false_positive": 0.04942910551165555
+    },
+    {
+      "reference": 1,
+      "statistic": "count",
+      "allocation": "difficulty60",
+      "panels": 28,
+      "mean_power": 0.5438881758095109,
+      "high_power": 12,
+      "worst_case_false_positive": 0.049236026128052196
+    },
+    {
+      "reference": 1,
+      "statistic": "pooled",
+      "allocation": "difficulty60",
+      "panels": 28,
+      "mean_power": 0.5443742866374217,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04972935764332499
+    },
+    {
+      "reference": 1,
+      "statistic": "posterior",
+      "allocation": "difficulty60",
+      "panels": 28,
+      "mean_power": 0.5436213998539072,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04972935764332499
+    },
+    {
+      "reference": 1,
+      "statistic": "likelihood",
+      "allocation": "difficulty60",
+      "panels": 28,
+      "mean_power": 0.5141077063158761,
+      "high_power": 12,
+      "worst_case_false_positive": 0.04999956787300039
+    },
+    {
+      "reference": 2,
+      "statistic": "count",
+      "allocation": "proportional",
+      "panels": 32,
+      "mean_power": 0.33497807144959446,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04910891578604399
+    },
+    {
+      "reference": 2,
+      "statistic": "pooled",
+      "allocation": "proportional",
+      "panels": 32,
+      "mean_power": 0.3351010826324499,
+      "high_power": 3,
+      "worst_case_false_positive": 0.049468036930441536
+    },
+    {
+      "reference": 2,
+      "statistic": "posterior",
+      "allocation": "proportional",
+      "panels": 32,
+      "mean_power": 0.33504100222963873,
+      "high_power": 3,
+      "worst_case_false_positive": 0.049468036930441536
+    },
+    {
+      "reference": 2,
+      "statistic": "likelihood",
+      "allocation": "proportional",
+      "panels": 32,
+      "mean_power": 0.33466756181250296,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04920729711053819
+    },
+    {
+      "reference": 2,
+      "statistic": "count",
+      "allocation": "balanced",
+      "panels": 32,
+      "mean_power": 0.33763049284910407,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04963867865295916
+    },
+    {
+      "reference": 2,
+      "statistic": "pooled",
+      "allocation": "balanced",
+      "panels": 32,
+      "mean_power": 0.33759764469881076,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04911231457361489
+    },
+    {
+      "reference": 2,
+      "statistic": "posterior",
+      "allocation": "balanced",
+      "panels": 32,
+      "mean_power": 0.33629145612439726,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04979610137195396
+    },
+    {
+      "reference": 2,
+      "statistic": "likelihood",
+      "allocation": "balanced",
+      "panels": 32,
+      "mean_power": 0.3327852884379777,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04979586297446785
+    },
+    {
+      "reference": 2,
+      "statistic": "count",
+      "allocation": "random60",
+      "panels": 32,
+      "mean_power": 0.33331238665988866,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04942910551165555
+    },
+    {
+      "reference": 2,
+      "statistic": "pooled",
+      "allocation": "random60",
+      "panels": 32,
+      "mean_power": 0.33398978662751533,
+      "high_power": 3,
+      "worst_case_false_positive": 0.0499850193231452
+    },
+    {
+      "reference": 2,
+      "statistic": "posterior",
+      "allocation": "random60",
+      "panels": 32,
+      "mean_power": 0.3233250357884649,
+      "high_power": 2,
+      "worst_case_false_positive": 0.04942910551165555
+    },
+    {
+      "reference": 2,
+      "statistic": "likelihood",
+      "allocation": "random60",
+      "panels": 32,
+      "mean_power": 0.2898448855246613,
+      "high_power": 2,
+      "worst_case_false_positive": 0.04942910551165555
+    },
+    {
+      "reference": 2,
+      "statistic": "count",
+      "allocation": "difficulty60",
+      "panels": 32,
+      "mean_power": 0.33987633396882444,
+      "high_power": 3,
+      "worst_case_false_positive": 0.04785033172602731
+    },
+    {
+      "reference": 2,
+      "statistic": "pooled",
+      "allocation": "difficulty60",
+      "panels": 32,
+      "mean_power": 0.34006882353998835,
+      "high_power": 3,
+      "worst_case_false_positive": 0.049661865832006664
+    },
+    {
+      "reference": 2,
+      "statistic": "posterior",
+      "allocation": "difficulty60",
+      "panels": 32,
+      "mean_power": 0.3372411579001162,
+      "high_power": 3,
+      "worst_case_false_positive": 0.049661865832006664
+    },
+    {
+      "reference": 2,
+      "statistic": "likelihood",
+      "allocation": "difficulty60",
+      "panels": 32,
+      "mean_power": 0.3126284668912152,
+      "high_power": 2,
+      "worst_case_false_positive": 0.047366724452235116
+    }
+  ],
+  "paired_sign": [
+    {
+      "reference": 1,
+      "method": "rank_matched",
+      "panels": 28,
+      "mean_power": 0.3970794669695971,
+      "high_power": 0,
+      "worst_case_false_positive": 0.05
+    },
+    {
+      "reference": 1,
+      "method": "rank_reversed",
+      "panels": 28,
+      "mean_power": 0.3747822728559894,
+      "high_power": 0,
+      "worst_case_false_positive": 0.05
+    },
+    {
+      "reference": 1,
+      "method": "shuffled",
+      "panels": 28,
+      "mean_power": 0.3854842869548941,
+      "high_power": 0,
+      "worst_case_false_positive": 0.05
+    },
+    {
+      "reference": 2,
+      "method": "rank_matched",
+      "panels": 32,
+      "mean_power": 0.21938442622358814,
+      "high_power": 0,
+      "worst_case_false_positive": 0.05
+    },
+    {
+      "reference": 2,
+      "method": "rank_reversed",
+      "panels": 32,
+      "mean_power": 0.23087614916929441,
+      "high_power": 0,
+      "worst_case_false_positive": 0.05
+    },
+    {
+      "reference": 2,
+      "method": "shuffled",
+      "panels": 32,
+      "mean_power": 0.21685213704162415,
+      "high_power": 1,
+      "worst_case_false_positive": 0.05
+    }
+  ],
+  "rank_priority": [
+    {
+      "reference": 1,
+      "method": "positive_only",
+      "material": 28,
+      "baseline_checks": 3355,
+      "screened_checks": 1182,
+      "material_skipped": 0,
+      "baseline_power": 0.5417249626212982,
+      "new_power": 0.5417249626212982,
+      "baseline_high_power": 12,
+      "new_high_power": 12,
+      "unchanged_on_every_material": true,
+      "worst_case_false_positive": 0.04910891578604399
+    },
+    {
+      "reference": 1,
+      "method": "descending",
+      "material": 28,
+      "baseline_checks": 3355,
+      "screened_checks": 3355,
+      "material_skipped": 0,
+      "baseline_power": 0.5417249626212982,
+      "new_power": 0.6183455859535034,
+      "baseline_high_power": 12,
+      "new_high_power": 11,
+      "unchanged_on_every_material": false,
+      "worst_case_false_positive": 0.04999536143608627
+    },
+    {
+      "reference": 1,
+      "method": "smooth",
+      "material": 28,
+      "baseline_checks": 3355,
+      "screened_checks": 3355,
+      "material_skipped": 0,
+      "baseline_power": 0.5417249626212982,
+      "new_power": 0.6335015654308745,
+      "baseline_high_power": 12,
+      "new_high_power": 14,
+      "unchanged_on_every_material": false,
+      "worst_case_false_positive": 0.04988452499828785
+    },
+    {
+      "reference": 2,
+      "method": "positive_only",
+      "material": 32,
+      "baseline_checks": 858,
+      "screened_checks": 718,
+      "material_skipped": 0,
+      "baseline_power": 0.33497807144959446,
+      "new_power": 0.33497807144959446,
+      "baseline_high_power": 3,
+      "new_high_power": 3,
+      "unchanged_on_every_material": true,
+      "worst_case_false_positive": 0.04910891578604399
+    },
+    {
+      "reference": 2,
+      "method": "descending",
+      "material": 32,
+      "baseline_checks": 858,
+      "screened_checks": 858,
+      "material_skipped": 0,
+      "baseline_power": 0.33497807144959446,
+      "new_power": 0.3139450100097702,
+      "baseline_high_power": 3,
+      "new_high_power": 5,
+      "unchanged_on_every_material": false,
+      "worst_case_false_positive": 0.049931462634177526
+    },
+    {
+      "reference": 2,
+      "method": "smooth",
+      "material": 32,
+      "baseline_checks": 858,
+      "screened_checks": 858,
+      "material_skipped": 0,
+      "baseline_power": 0.33497807144959446,
+      "new_power": 0.32878897490766584,
+      "baseline_high_power": 3,
+      "new_high_power": 3,
+      "unchanged_on_every_material": false,
+      "worst_case_false_positive": 0.04878489935141745
+    },
+    {
+      "reference": 1,
+      "method": "positive_only_loco",
+      "material": 28,
+      "baseline_checks": 3355,
+      "screened_checks": 1182,
+      "material_skipped": 0,
+      "baseline_power": 0.5417249626212982,
+      "new_power": 0.5417249626212982,
+      "baseline_high_power": 12,
+      "new_high_power": 12,
+      "unchanged_on_every_material": true,
+      "worst_case_false_positive": 0.04910891578604399
+    },
+    {
+      "reference": 2,
+      "method": "positive_only_loco",
+      "material": 32,
+      "baseline_checks": 858,
+      "screened_checks": 718,
+      "material_skipped": 0,
+      "baseline_power": 0.33497807144959446,
+      "new_power": 0.33497807144959446,
+      "baseline_high_power": 3,
+      "new_high_power": 3,
+      "unchanged_on_every_material": true,
+      "worst_case_false_positive": 0.04910891578604399
+    }
+  ],
+  "deployment": [
+    {
+      "reference": 1,
+      "vs_expected_yield": -0.33168587743379724,
+      "vs_yield_random": -36.53809700362802,
+      "vs_yield_difficulty": 13.648808157725917,
+      "vs_yield_interleave": -14.193801024272409
+    },
+    {
+      "reference": 2,
+      "vs_expected_yield": -0.29092493218800636,
+      "vs_yield_random": -93.4813773030503,
+      "vs_yield_difficulty": 29.3761196030708,
+      "vs_yield_interleave": -37.603572506291776
+    }
+  ]
+}

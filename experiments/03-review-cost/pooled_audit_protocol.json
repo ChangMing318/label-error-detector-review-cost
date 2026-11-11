@@ -1,0 +1,11 @@
+{
+  "folds": 4,
+  "split": "Sort datasets by SHA-256 of the name, then assign round-robin to four folds. All reference labels in a held-out fold are excluded from rank-model fitting.",
+  "baseline_audit": 0.10,
+  "initial_audit": 0.05,
+  "maximum_audit": 0.25,
+  "priority": "Signed difference in predicted hits between the two exclusive sets, divided by the total number of exclusive records.",
+  "budget": "Within each held-out fold, match the sum of baseline audit counts over eligible panels. Give every eligible panel up to 5% of its original cap, then fill the remaining budget up to 25% of each cap. Compare descending priority and a smooth allocation with extra-check weights proportional to baseline checks times exp(8 times priority). Apply the same exact test as the baseline. Budget independently for the primary and available second-reference cohorts. This is a pooled diagnostic budget over separate review decisions.",
+  "zero_sign_screen": "Use the same held-out rank score for a single-panel gate. Audit at the unchanged baseline per-panel limit if the predicted signed gap is positive. Otherwise do not audit. Zero is the endpoint boundary. Report actual check savings and any certificates forgone.",
+  "report": "Actual checks, detection probabilities, material-panel counts, worst-case null control, and differences by held-out target."
+}

@@ -1,0 +1,10 @@
+{
+  "population": "All frozen expanded-menu paired source choices at the original 10% review cap. A second independently collected reference is scored wherever available.",
+  "endpoint": "Whether the difficulty-selected queue needs at least ceil(0.10 B) more checks to match the random-selected queue's yield at B.",
+  "audit_fractions": [0.05, 0.10, 0.25],
+  "primary_audit_fraction": 0.10,
+  "alpha": 0.05,
+  "methods": ["count", "pooled", "posterior", "likelihood"],
+  "allocation": ["proportional", "balanced", "random60", "difficulty60"],
+  "evaluation": "Exact certificate probabilities conditional on the frozen reference. Compare predeclared statistics and allocations. Report primary and second references separately. Use identical check limits and worst-case type-I control for every test. Additional held-out-corpus method selection uses first-reference outcomes from other corpora only."
+}

@@ -1,0 +1,8 @@
+{
+  "endpoint": "Certify whether the default queue needs at least ceil(0.10 B) extra checks to match the alternative at B.",
+  "test": "Use the same exact worst-case-null terminal rejection rule, audit cap and proportional final sample allocation as the previous fixed audit. Sample within each exclusive set without replacement.",
+  "rule": "After each distinct check, evaluate the most and least favorable possible completions of the prespecified final samples. Stop as soon as all completions have the same terminal decision. No optional p-value comparisons.",
+  "primary_schedule": "Interleave in proportion to the fixed final allocation. Prioritize the challenger on exact ties.",
+  "comparisons": ["fixed audit", "proportional futility only", "proportional both outcomes", "challenger first", "default first"],
+  "evaluation": "Compute exact expected checks and final certificate probabilities on the frozen 17 targets and six paired references. Repeat all budgets 5/10/20 percent and both directions. Include screen controls and full shared-budget replay separately."
+}

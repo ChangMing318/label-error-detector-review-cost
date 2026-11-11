@@ -1,0 +1,1719 @@
+{
+  "counts_by_budget": {
+    "0.05": {
+      "rows": 170,
+      "different_detector": 93,
+      "ruled_out_repairs": 77,
+      "ruled_out_hard_debt": 77,
+      "ruled_out_random_debt": 77,
+      "hard_repair_loss": 37,
+      "random_repair_loss": 8,
+      "hard_debt": 40,
+      "random_debt": 9,
+      "hard_debt_all_ties": 37
+    },
+    "0.1": {
+      "rows": 170,
+      "different_detector": 85,
+      "ruled_out_repairs": 86,
+      "ruled_out_hard_debt": 86,
+      "ruled_out_random_debt": 86,
+      "hard_repair_loss": 48,
+      "random_repair_loss": 3,
+      "hard_debt": 28,
+      "random_debt": 0,
+      "hard_debt_all_ties": 28
+    },
+    "0.2": {
+      "rows": 170,
+      "different_detector": 80,
+      "ruled_out_repairs": 90,
+      "ruled_out_hard_debt": 90,
+      "ruled_out_random_debt": 90,
+      "hard_repair_loss": 45,
+      "random_repair_loss": 12,
+      "hard_debt": 33,
+      "random_debt": 0,
+      "hard_debt_all_ties": 32
+    }
+  },
+  "cases": [
+    {
+      "dataset": "AudioSet",
+      "reference": 1,
+      "n": 4334,
+      "B": 433,
+      "random_hits": 332,
+      "hard_hits": 332,
+      "mean_signed_extra": 0,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 0
+    },
+    {
+      "dataset": "CIFAR-100N",
+      "reference": 1,
+      "n": 5999,
+      "B": 600,
+      "random_hits": 553,
+      "hard_hits": 553,
+      "mean_signed_extra": 0,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 0
+    },
+    {
+      "dataset": "CIFAR-10N",
+      "reference": 1,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 542,
+      "hard_hits": 521,
+      "mean_signed_extra": 28.7,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 7,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 41
+    },
+    {
+      "dataset": "D3code",
+      "reference": 1,
+      "n": 1158,
+      "B": 116,
+      "random_hits": 78.3,
+      "hard_hits": 55.1,
+      "mean_signed_extra": 45.6,
+      "hard_material": 8,
+      "random_material": 0,
+      "hard_trails": 9,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 60
+    },
+    {
+      "dataset": "D3code",
+      "reference": 2,
+      "n": 1158,
+      "B": 116,
+      "random_hits": 80.9,
+      "hard_hits": 54.6,
+      "mean_signed_extra": 46.7,
+      "hard_material": 9,
+      "random_material": 0,
+      "hard_trails": 9,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 59
+    },
+    {
+      "dataset": "Davidson",
+      "reference": 1,
+      "n": 5186,
+      "B": 519,
+      "random_hits": 382.3,
+      "hard_hits": 385,
+      "mean_signed_extra": -9,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 9,
+      "min_extra": -10,
+      "max_extra": 0
+    },
+    {
+      "dataset": "DynaSent",
+      "reference": 1,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 222.6,
+      "hard_hits": 227,
+      "mean_signed_extra": -11.6,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 4,
+      "min_extra": -29,
+      "max_extra": 0
+    },
+    {
+      "dataset": "Fashion-MNIST-H",
+      "reference": 1,
+      "n": 2533,
+      "B": 253,
+      "random_hits": 247.8,
+      "hard_hits": 244.5,
+      "mean_signed_extra": 3.3,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 4,
+      "random_trails": 1,
+      "min_extra": -7,
+      "max_extra": 11
+    },
+    {
+      "dataset": "GoEmotions",
+      "reference": 1,
+      "n": 4040,
+      "B": 404,
+      "random_hits": 316.9,
+      "hard_hits": 278.2,
+      "mean_signed_extra": 104.7,
+      "hard_material": 3,
+      "random_material": 0,
+      "hard_trails": 3,
+      "random_trails": 2,
+      "min_extra": -26,
+      "max_extra": 384
+    },
+    {
+      "dataset": "GoEmotions",
+      "reference": 2,
+      "n": 4040,
+      "B": 404,
+      "random_hits": 323.3,
+      "hard_hits": 276.2,
+      "mean_signed_extra": 109.2,
+      "hard_material": 3,
+      "random_material": 0,
+      "hard_trails": 5,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 364
+    },
+    {
+      "dataset": "HateXplain",
+      "reference": 1,
+      "n": 3193,
+      "B": 319,
+      "random_hits": 204.6,
+      "hard_hits": 156,
+      "mean_signed_extra": 129.8,
+      "hard_material": 7,
+      "random_material": 0,
+      "hard_trails": 7,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 336
+    },
+    {
+      "dataset": "MBIC",
+      "reference": 1,
+      "n": 424,
+      "B": 42,
+      "random_hits": 29.1,
+      "hard_hits": 29,
+      "mean_signed_extra": 0.1,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 1,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 1
+    },
+    {
+      "dataset": "MBIC",
+      "reference": 2,
+      "n": 424,
+      "B": 42,
+      "random_hits": 27,
+      "hard_hits": 22,
+      "mean_signed_extra": 7,
+      "hard_material": 10,
+      "random_material": 0,
+      "hard_trails": 10,
+      "random_trails": 0,
+      "min_extra": 7,
+      "max_extra": 7
+    },
+    {
+      "dataset": "Measuring-Hate-Speech",
+      "reference": 1,
+      "n": 3630,
+      "B": 363,
+      "random_hits": 237,
+      "hard_hits": 237,
+      "mean_signed_extra": 0,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 0
+    },
+    {
+      "dataset": "MultiNLI",
+      "reference": 1,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 107.2,
+      "hard_hits": 107.2,
+      "mean_signed_extra": 0,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 3,
+      "random_trails": 3,
+      "min_extra": -48,
+      "max_extra": 48
+    },
+    {
+      "dataset": "SBIC",
+      "reference": 1,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 283.7,
+      "hard_hits": 269,
+      "mean_signed_extra": 46.9,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 10,
+      "random_trails": 0,
+      "min_extra": 24,
+      "max_extra": 52
+    },
+    {
+      "dataset": "SNLI",
+      "reference": 1,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 138.9,
+      "hard_hits": 138,
+      "mean_signed_extra": 3.6,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 1,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 36
+    },
+    {
+      "dataset": "Stanford-Politeness",
+      "reference": 1,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 311,
+      "hard_hits": 311,
+      "mean_signed_extra": 0,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 0
+    },
+    {
+      "dataset": "Stanford-Politeness",
+      "reference": 2,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 297,
+      "hard_hits": 297,
+      "mean_signed_extra": 0,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 0
+    },
+    {
+      "dataset": "Unhealthy-Comments",
+      "reference": 1,
+      "n": 4487,
+      "B": 449,
+      "random_hits": 346,
+      "hard_hits": 193,
+      "mean_signed_extra": 294,
+      "hard_material": 10,
+      "random_material": 0,
+      "hard_trails": 10,
+      "random_trails": 0,
+      "min_extra": 294,
+      "max_extra": 294
+    },
+    {
+      "dataset": "Unhealthy-Comments",
+      "reference": 2,
+      "n": 4487,
+      "B": 449,
+      "random_hits": 329,
+      "hard_hits": 205,
+      "mean_signed_extra": 258,
+      "hard_material": 10,
+      "random_material": 0,
+      "hard_trails": 10,
+      "random_trails": 0,
+      "min_extra": 258,
+      "max_extra": 258
+    },
+    {
+      "dataset": "Wikipedia-Attack",
+      "reference": 1,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 374,
+      "hard_hits": 374,
+      "mean_signed_extra": 0,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 0,
+      "min_extra": 0,
+      "max_extra": 0
+    },
+    {
+      "dataset": "Wikipedia-Attack",
+      "reference": 2,
+      "n": 6000,
+      "B": 600,
+      "random_hits": 382.5,
+      "hard_hits": 383,
+      "mean_signed_extra": -1.6,
+      "hard_material": 0,
+      "random_material": 0,
+      "hard_trails": 0,
+      "random_trails": 1,
+      "min_extra": -16,
+      "max_extra": 0
+    }
+  ],
+  "audits": {
+    "repairs:1": {
+      "material_panels": 48,
+      "curve": [
+        {
+          "max_budget_fraction": 0.05,
+          "mean_power": 0.22420463112985092,
+          "panels_ge_80": 0,
+          "conservative_mean_power": 0.03232578666864536,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.1,
+          "mean_power": 0.35569625116075004,
+          "panels_ge_80": 12,
+          "conservative_mean_power": 0.14400695302450173,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.25,
+          "mean_power": 0.520386158496879,
+          "panels_ge_80": 16,
+          "conservative_mean_power": 0.35475762493174595,
+          "conservative_panels_ge_80": 15
+        },
+        {
+          "max_budget_fraction": 0.5,
+          "mean_power": 0.6995473717458124,
+          "panels_ge_80": 33,
+          "conservative_mean_power": 0.6099721090892378,
+          "conservative_panels_ge_80": 27
+        },
+        {
+          "max_budget_fraction": 1.0,
+          "mean_power": 0.9866237379496585,
+          "panels_ge_80": 47,
+          "conservative_mean_power": 0.9710097117070366,
+          "conservative_panels_ge_80": 46
+        },
+        {
+          "max_budget_fraction": 1.5,
+          "mean_power": 0.9999999372451407,
+          "panels_ge_80": 48,
+          "conservative_mean_power": 0.9999624196550551,
+          "conservative_panels_ge_80": 48
+        },
+        {
+          "max_budget_fraction": 2.0,
+          "mean_power": 1.0,
+          "panels_ge_80": 48,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 48
+        },
+        {
+          "max_budget_fraction": 2.1,
+          "mean_power": 1.0,
+          "panels_ge_80": 48,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 48
+        }
+      ],
+      "first_measured_80pct_power": [
+        {
+          "dataset": "CIFAR-10N",
+          "seed": 26112501,
+          "cost": 300,
+          "B": 600,
+          "power": 0.9987240691005657
+        },
+        {
+          "dataset": "CIFAR-10N",
+          "seed": 26112502,
+          "cost": 300,
+          "B": 600,
+          "power": 0.9987240691005657
+        },
+        {
+          "dataset": "CIFAR-10N",
+          "seed": 26112503,
+          "cost": 300,
+          "B": 600,
+          "power": 0.9987240691005657
+        },
+        {
+          "dataset": "CIFAR-10N",
+          "seed": 26112504,
+          "cost": 300,
+          "B": 600,
+          "power": 0.9987240691005657
+        },
+        {
+          "dataset": "CIFAR-10N",
+          "seed": 26112505,
+          "cost": 300,
+          "B": 600,
+          "power": 0.9987240691005657
+        },
+        {
+          "dataset": "CIFAR-10N",
+          "seed": 26112508,
+          "cost": 300,
+          "B": 600,
+          "power": 0.9987240691005657
+        },
+        {
+          "dataset": "CIFAR-10N",
+          "seed": 26112509,
+          "cost": 300,
+          "B": 600,
+          "power": 0.9987240691005657
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112500,
+          "cost": 130,
+          "B": 116,
+          "power": 1.0
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112501,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8480941601230688
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112502,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8480941601230688
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112503,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8480941601230688
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112504,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8480941601230688
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112505,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8480941601230688
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112506,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8480941601230688
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112508,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9822073997539004
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112509,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9120107712843949
+        },
+        {
+          "dataset": "Fashion-MNIST-H",
+          "seed": 26112500,
+          "cost": 234,
+          "B": 253,
+          "power": 1.0
+        },
+        {
+          "dataset": "Fashion-MNIST-H",
+          "seed": 26112501,
+          "cost": 234,
+          "B": 253,
+          "power": 1.0
+        },
+        {
+          "dataset": "Fashion-MNIST-H",
+          "seed": 26112506,
+          "cost": 182,
+          "B": 253,
+          "power": 1.0
+        },
+        {
+          "dataset": "Fashion-MNIST-H",
+          "seed": 26112509,
+          "cost": 234,
+          "B": 253,
+          "power": 1.0
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112504,
+          "cost": 40,
+          "B": 404,
+          "power": 0.8759072268416243
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112506,
+          "cost": 40,
+          "B": 404,
+          "power": 0.8759072268416243
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112509,
+          "cost": 101,
+          "B": 404,
+          "power": 0.9822283074994826
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112500,
+          "cost": 80,
+          "B": 319,
+          "power": 0.9922889172594827
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112501,
+          "cost": 80,
+          "B": 319,
+          "power": 0.8806772094988339
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112504,
+          "cost": 160,
+          "B": 319,
+          "power": 0.994470613057731
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112505,
+          "cost": 160,
+          "B": 319,
+          "power": 0.994470613057731
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112506,
+          "cost": 160,
+          "B": 319,
+          "power": 0.994470613057731
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112508,
+          "cost": 80,
+          "B": 319,
+          "power": 0.9922889172594827
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112509,
+          "cost": 160,
+          "B": 319,
+          "power": 0.994470613057731
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112500,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112501,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112502,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112503,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112504,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112505,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112507,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "SBIC",
+          "seed": 26112509,
+          "cost": 564,
+          "B": 600,
+          "power": 1.0
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112500,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112501,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112502,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112503,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112504,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112505,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112506,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112507,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112508,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112509,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8982597894408587
+        }
+      ]
+    },
+    "repairs:2": {
+      "material_panels": 32,
+      "curve": [
+        {
+          "max_budget_fraction": 0.05,
+          "mean_power": 0.21141439794795774,
+          "panels_ge_80": 0,
+          "conservative_mean_power": 0.027218081061817556,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.1,
+          "mean_power": 0.3648479536510369,
+          "panels_ge_80": 3,
+          "conservative_mean_power": 0.12463610640380278,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.25,
+          "mean_power": 0.5437224138137466,
+          "panels_ge_80": 13,
+          "conservative_mean_power": 0.3789996875589839,
+          "conservative_panels_ge_80": 13
+        },
+        {
+          "max_budget_fraction": 0.5,
+          "mean_power": 0.6681780428568308,
+          "panels_ge_80": 19,
+          "conservative_mean_power": 0.5284487310581722,
+          "conservative_panels_ge_80": 13
+        },
+        {
+          "max_budget_fraction": 1.0,
+          "mean_power": 0.8920999405001613,
+          "panels_ge_80": 22,
+          "conservative_mean_power": 0.7817207290597894,
+          "conservative_panels_ge_80": 21
+        },
+        {
+          "max_budget_fraction": 1.5,
+          "mean_power": 0.987873919812433,
+          "panels_ge_80": 31,
+          "conservative_mean_power": 0.9757277647846405,
+          "conservative_panels_ge_80": 31
+        },
+        {
+          "max_budget_fraction": 2.0,
+          "mean_power": 1.0,
+          "panels_ge_80": 32,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 32
+        },
+        {
+          "max_budget_fraction": 2.1,
+          "mean_power": 1.0,
+          "panels_ge_80": 32,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 32
+        }
+      ],
+      "first_measured_80pct_power": [
+        {
+          "dataset": "D3code",
+          "seed": 26112500,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9996848624703119
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112501,
+          "cost": 58,
+          "B": 116,
+          "power": 0.9299704318382357
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112502,
+          "cost": 58,
+          "B": 116,
+          "power": 0.9299704318382357
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112503,
+          "cost": 58,
+          "B": 116,
+          "power": 0.9299704318382357
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112504,
+          "cost": 58,
+          "B": 116,
+          "power": 0.9299704318382357
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112505,
+          "cost": 58,
+          "B": 116,
+          "power": 0.9299704318382357
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112506,
+          "cost": 58,
+          "B": 116,
+          "power": 0.9299704318382357
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112508,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9897931151396661
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112509,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9120888207127212
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112504,
+          "cost": 40,
+          "B": 404,
+          "power": 0.9216196342383909
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112506,
+          "cost": 40,
+          "B": 404,
+          "power": 0.9216196342383909
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112509,
+          "cost": 40,
+          "B": 404,
+          "power": 0.827497068068194
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112500,
+          "cost": 72,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112501,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112502,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112503,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112504,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112505,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112506,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112507,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112508,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112509,
+          "cost": 50,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112500,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112501,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112502,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112503,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112504,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112505,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112506,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112507,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112508,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112509,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9852350146423972
+        }
+      ]
+    },
+    "extra_checks:2": {
+      "material_panels": 32,
+      "curve": [
+        {
+          "max_budget_fraction": 0.05,
+          "mean_power": 0.20812946753662337,
+          "panels_ge_80": 0,
+          "conservative_mean_power": 0.020756579653008266,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.1,
+          "mean_power": 0.3349780714495944,
+          "panels_ge_80": 3,
+          "conservative_mean_power": 0.0937847998072577,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.25,
+          "mean_power": 0.5256652575038604,
+          "panels_ge_80": 13,
+          "conservative_mean_power": 0.33198044718934505,
+          "conservative_panels_ge_80": 3
+        },
+        {
+          "max_budget_fraction": 0.5,
+          "mean_power": 0.6194818779306476,
+          "panels_ge_80": 19,
+          "conservative_mean_power": 0.48076051746829146,
+          "conservative_panels_ge_80": 13
+        },
+        {
+          "max_budget_fraction": 1.0,
+          "mean_power": 0.7085757569540766,
+          "panels_ge_80": 20,
+          "conservative_mean_power": 0.6319319597658685,
+          "conservative_panels_ge_80": 19
+        },
+        {
+          "max_budget_fraction": 1.5,
+          "mean_power": 0.9734193736702756,
+          "panels_ge_80": 31,
+          "conservative_mean_power": 0.966154116265589,
+          "conservative_panels_ge_80": 31
+        },
+        {
+          "max_budget_fraction": 2.0,
+          "mean_power": 1.0,
+          "panels_ge_80": 32,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 32
+        },
+        {
+          "max_budget_fraction": 2.1,
+          "mean_power": 1.0,
+          "panels_ge_80": 32,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 32
+        }
+      ],
+      "first_measured_80pct_power": [
+        {
+          "dataset": "D3code",
+          "seed": 26112500,
+          "cost": 135,
+          "B": 116,
+          "power": 1.0
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112501,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8498925754768573
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112502,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8498925754768573
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112503,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8498925754768573
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112504,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8498925754768573
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112505,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8498925754768573
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112506,
+          "cost": 58,
+          "B": 116,
+          "power": 0.8498925754768573
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112508,
+          "cost": 116,
+          "B": 116,
+          "power": 0.8740366035522336
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112509,
+          "cost": 174,
+          "B": 116,
+          "power": 0.9955326690145709
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112504,
+          "cost": 40,
+          "B": 404,
+          "power": 0.916672948862447
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112506,
+          "cost": 40,
+          "B": 404,
+          "power": 0.916672948862447
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112509,
+          "cost": 40,
+          "B": 404,
+          "power": 0.8233573099460223
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112500,
+          "cost": 76,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112501,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112502,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112503,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112504,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112505,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112506,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112507,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112508,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "MBIC",
+          "seed": 26112509,
+          "cost": 54,
+          "B": 42,
+          "power": 1.0
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112500,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112501,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112502,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112503,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112504,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112505,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112506,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112507,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112508,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112509,
+          "cost": 112,
+          "B": 449,
+          "power": 0.9710663654928366
+        }
+      ]
+    },
+    "extra_checks:1": {
+      "material_panels": 28,
+      "curve": [
+        {
+          "max_budget_fraction": 0.05,
+          "mean_power": 0.3500920688517848,
+          "panels_ge_80": 0,
+          "conservative_mean_power": 0.04377345527758873,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.1,
+          "mean_power": 0.5417249626212982,
+          "panels_ge_80": 12,
+          "conservative_mean_power": 0.1875408416580045,
+          "conservative_panels_ge_80": 0
+        },
+        {
+          "max_budget_fraction": 0.25,
+          "mean_power": 0.7602980592949832,
+          "panels_ge_80": 16,
+          "conservative_mean_power": 0.5404192597311627,
+          "conservative_panels_ge_80": 14
+        },
+        {
+          "max_budget_fraction": 0.5,
+          "mean_power": 0.8902559586157601,
+          "panels_ge_80": 20,
+          "conservative_mean_power": 0.7183380089658277,
+          "conservative_panels_ge_80": 16
+        },
+        {
+          "max_budget_fraction": 1.0,
+          "mean_power": 0.9860982812338991,
+          "panels_ge_80": 27,
+          "conservative_mean_power": 0.9489147655531315,
+          "conservative_panels_ge_80": 26
+        },
+        {
+          "max_budget_fraction": 1.5,
+          "mean_power": 0.999842473269599,
+          "panels_ge_80": 28,
+          "conservative_mean_power": 0.9963720705431346,
+          "conservative_panels_ge_80": 28
+        },
+        {
+          "max_budget_fraction": 2.0,
+          "mean_power": 1.0,
+          "panels_ge_80": 28,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 28
+        },
+        {
+          "max_budget_fraction": 2.1,
+          "mean_power": 1.0,
+          "panels_ge_80": 28,
+          "conservative_mean_power": 1.0,
+          "conservative_panels_ge_80": 28
+        }
+      ],
+      "first_measured_80pct_power": [
+        {
+          "dataset": "D3code",
+          "seed": 26112501,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9983235268681596
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112502,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9983235268681596
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112503,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9983235268681596
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112504,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9983235268681596
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112505,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9983235268681596
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112506,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9983235268681596
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112508,
+          "cost": 116,
+          "B": 116,
+          "power": 0.9054644991493688
+        },
+        {
+          "dataset": "D3code",
+          "seed": 26112509,
+          "cost": 174,
+          "B": 116,
+          "power": 0.9955892515487733
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112504,
+          "cost": 40,
+          "B": 404,
+          "power": 0.8753677033427003
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112506,
+          "cost": 40,
+          "B": 404,
+          "power": 0.8753677033427003
+        },
+        {
+          "dataset": "GoEmotions",
+          "seed": 26112509,
+          "cost": 101,
+          "B": 404,
+          "power": 0.965774999544514
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112500,
+          "cost": 80,
+          "B": 319,
+          "power": 0.9909177634339574
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112501,
+          "cost": 80,
+          "B": 319,
+          "power": 0.8960321960612186
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112504,
+          "cost": 160,
+          "B": 319,
+          "power": 0.9519837020461197
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112505,
+          "cost": 160,
+          "B": 319,
+          "power": 0.9519837020461197
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112506,
+          "cost": 160,
+          "B": 319,
+          "power": 0.9519837020461197
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112508,
+          "cost": 80,
+          "B": 319,
+          "power": 0.9909177634339574
+        },
+        {
+          "dataset": "HateXplain",
+          "seed": 26112509,
+          "cost": 160,
+          "B": 319,
+          "power": 0.9519837020461197
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112500,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112501,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112502,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112503,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112504,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112505,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112506,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112507,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112508,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        },
+        {
+          "dataset": "Unhealthy-Comments",
+          "seed": 26112509,
+          "cost": 45,
+          "B": 449,
+          "power": 0.8538259134558439
+        }
+      ]
+    }
+  },
+  "policies": [
+    {
+      "audit_fraction": 0,
+      "reference": 1,
+      "datasets": 17,
+      "vs_random_per_10000": -50.186905161353934,
+      "vs_difficulty_per_10000": 0.0,
+      "vs_interleave_per_10000": -27.842609181998327
+    },
+    {
+      "audit_fraction": 0.05,
+      "reference": 1,
+      "datasets": 17,
+      "vs_random_per_10000": -46.05260348471115,
+      "vs_difficulty_per_10000": 4.134301676642783,
+      "vs_interleave_per_10000": -23.708307505355542
+    },
+    {
+      "audit_fraction": 0.1,
+      "reference": 1,
+      "datasets": 17,
+      "vs_random_per_10000": -36.20641112619422,
+      "vs_difficulty_per_10000": 13.980494035159714,
+      "vs_interleave_per_10000": -13.862115146838612
+    },
+    {
+      "audit_fraction": 0.2,
+      "reference": 1,
+      "datasets": 17,
+      "vs_random_per_10000": -21.37889974255897,
+      "vs_difficulty_per_10000": 28.808005418794963,
+      "vs_interleave_per_10000": 0.9653962367966354
+    },
+    {
+      "audit_fraction": 0.35,
+      "reference": 1,
+      "datasets": 17,
+      "vs_random_per_10000": -17.70329705610814,
+      "vs_difficulty_per_10000": 32.48360810524579,
+      "vs_interleave_per_10000": 4.640998923247466
+    },
+    {
+      "audit_fraction": 0.5,
+      "reference": 1,
+      "datasets": 17,
+      "vs_random_per_10000": -16.225073871105206,
+      "vs_difficulty_per_10000": 33.961831290248725,
+      "vs_interleave_per_10000": 6.119222108250401
+    },
+    {
+      "audit_fraction": 0,
+      "reference": 2,
+      "datasets": 6,
+      "vs_random_per_10000": -122.8574969061211,
+      "vs_difficulty_per_10000": 0.0,
+      "vs_interleave_per_10000": -66.97969210936257
+    },
+    {
+      "audit_fraction": 0.05,
+      "reference": 2,
+      "datasets": 6,
+      "vs_random_per_10000": -113.72444543982414,
+      "vs_difficulty_per_10000": 9.13305146629696,
+      "vs_interleave_per_10000": -57.84664064306561
+    },
+    {
+      "audit_fraction": 0.1,
+      "reference": 2,
+      "datasets": 6,
+      "vs_random_per_10000": -93.19045237086229,
+      "vs_difficulty_per_10000": 29.667044535258807,
+      "vs_interleave_per_10000": -37.312647574103764
+    },
+    {
+      "audit_fraction": 0.2,
+      "reference": 2,
+      "datasets": 6,
+      "vs_random_per_10000": -70.09066436319365,
+      "vs_difficulty_per_10000": 52.76683254292744,
+      "vs_interleave_per_10000": -14.212859566435132
+    },
+    {
+      "audit_fraction": 0.35,
+      "reference": 2,
+      "datasets": 6,
+      "vs_random_per_10000": -55.61071278012209,
+      "vs_difficulty_per_10000": 67.24678412599901,
+      "vs_interleave_per_10000": 0.2670920166364355
+    },
+    {
+      "audit_fraction": 0.5,
+      "reference": 2,
+      "datasets": 6,
+      "vs_random_per_10000": -49.493534801368384,
+      "vs_difficulty_per_10000": 73.36396210475273,
+      "vs_interleave_per_10000": 6.384269995390148
+    }
+  ]
+}
